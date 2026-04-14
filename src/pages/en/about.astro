@@ -1,0 +1,108 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import Header from "../../components/Header.astro";
+import Footer from "../../components/Footer.astro";
+import { getLangFromUrl, useTranslations } from "../../i18n/i18n";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+---
+
+<Layout title={t("meta.aboutTitle")}>
+  <div class="min-h-screen flex flex-col">
+    <Header />
+
+    <main class="flex-1">
+      <div class="px-4 md:px-10 lg:px-20 xl:px-40 py-10 md:py-16 lg:py-20">
+        <div class="max-w-6xl mx-auto">
+          <div
+            class="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12 items-center"
+          >
+            <!-- Profile Image -->
+            <div class="md:col-span-5">
+              <div
+                class="aspect-square bg-gray-300 dark:bg-gray-700 bg-cover bg-center rounded-xl shadow-lg flex items-center justify-center text-gray-500 dark:text-gray-400"
+              >
+                <span class="text-sm">{t("about.imagePlaceholder")}</span>
+              </div>
+            </div>
+
+            <!-- Content -->
+            <div class="md:col-span-7 flex flex-col gap-6">
+              <div>
+                <h2
+                  class="font-title text-4xl font-bold text-primary-dark dark:text-white mb-4"
+                >
+                  {t("about.title")}
+                </h2>
+
+                <div class="space-y-4">
+                  <!-- Mi Trayectoria -->
+                  <div>
+                    <h3
+                      class="font-title text-xl font-semibold text-primary-dark/80 dark:text-white/80 mb-2"
+                    >
+                      {t("about.journey.title")}
+                    </h3>
+                    <p
+                      class="font-body text-base text-[#333333] dark:text-gray-300 leading-relaxed"
+                    >
+                      {t("about.journey.description")}
+                    </p>
+                  </div>
+
+                  <!-- Mis Intereses -->
+                  <div>
+                    <h3
+                      class="font-title text-xl font-semibold text-primary-dark/80 dark:text-white/80 mb-2"
+                    >
+                      {t("about.interests.title")}
+                    </h3>
+                    <p
+                      class="font-body text-base text-[#333333] dark:text-gray-300 leading-relaxed"
+                    >
+                      {t("about.interests.description")}
+                    </p>
+                  </div>
+
+                  <!-- Mi Filosofía -->
+                  <div>
+                    <h3
+                      class="font-title text-xl font-semibold text-primary-dark/80 dark:text-white/80 mb-2"
+                    >
+                      {t("about.philosophy.title")}
+                    </h3>
+                    <p
+                      class="font-body text-base text-[#333333] dark:text-gray-300 leading-relaxed"
+                    >
+                      {t("about.philosophy.description")}
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- CTA Buttons -->
+              <div class="flex flex-col sm:flex-row w-full gap-3">
+                <a
+                  href="mailto:tu@email.com"
+                  class="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-6 bg-accent text-white text-base font-bold leading-normal tracking-[0.015em] flex-1 sm:flex-auto hover:bg-accent/90 transition-colors duration-200"
+                >
+                  <span class="truncate">{t("about.letsTalk")}</span>
+                </a>
+                <a
+                  href="/cv.pdf"
+                  download
+                  class="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-6 bg-gray-200 dark:bg-gray-700 text-primary-dark dark:text-white text-base font-bold leading-normal tracking-[0.015em] flex-1 sm:flex-auto hover:bg-gray-300 dark:hover:bg-gray-600 transition-colors duration-200"
+                >
+                  <span class="truncate">{t("about.downloadCV")}</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <Footer />
+  </div>
+</Layout>

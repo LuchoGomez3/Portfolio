@@ -1,0 +1,151 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import { getLangFromUrl, useTranslations } from "../i18n/i18n";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+---
+
+<Layout title={t("meta.projectsTitle")}>
+  <div class="min-h-screen flex flex-col">
+    <Header />
+
+    <main class="flex-1">
+      <div class="px-4 sm:px-8 md:px-16 lg:px-24 xl:px-40 py-10 sm:py-16">
+        <div class="max-w-6xl mx-auto">
+          <!-- Page Heading -->
+          <div class="flex flex-wrap justify-center text-center gap-3 p-4 mb-8">
+            <p
+              class="text-text-light dark:text-text-dark text-4xl sm:text-5xl font-black leading-tight tracking-tighter w-full"
+            >
+              {t("projects.title")}
+            </p>
+            <p
+              class="text-lg text-card-text-light dark:text-card-text-dark max-w-2xl"
+            >
+              {t("projects.subtitle")}
+            </p>
+          </div>
+
+          <!-- Projects Grid -->
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 p-4">
+            <!-- Project Card 1 -->
+            <div
+              class="flex flex-col gap-4 bg-card-light dark:bg-card-dark rounded-xl shadow-sm card-hover overflow-hidden"
+            >
+              <div
+                class="w-full bg-gray-300 dark:bg-gray-700 aspect-video flex items-center justify-center text-gray-500 dark:text-gray-400"
+              >
+                <span class="text-sm">Imagen proyecto</span>
+              </div>
+              <div class="p-6 flex flex-col flex-grow">
+                <p
+                  class="text-text-light dark:text-text-dark text-xl font-bold leading-normal mb-2"
+                >
+                  {t("projects.ecommerce.title")}
+                </p>
+                <p
+                  class="text-card-text-light dark:text-card-text-dark text-base font-normal leading-relaxed flex-grow"
+                >
+                  {t("projects.ecommerce.description")}
+                </p>
+                <div class="mt-6">
+                  <button
+                    class="w-full flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-11 px-4 bg-primary text-white text-base font-bold leading-normal tracking-[0.015em] hover:bg-primary-hover transition-colors"
+                  >
+                    <span class="truncate">{t("projects.viewProject")}</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project Card 2 -->
+            <div
+              class="flex flex-col gap-4 bg-card-light dark:bg-card-dark rounded-xl shadow-sm card-hover overflow-hidden"
+            >
+              <div
+                class="w-full bg-gray-300 dark:bg-gray-700 aspect-video flex items-center justify-center text-gray-500 dark:text-gray-400"
+              >
+                <span class="text-sm">Imagen proyecto</span>
+              </div>
+              <div class="p-6 flex flex-col flex-grow">
+                <p
+                  class="text-text-light dark:text-text-dark text-xl font-bold leading-normal mb-2"
+                >
+                  {t("projects.fitness.title")}
+                </p>
+                <p
+                  class="text-card-text-light dark:text-card-text-dark text-base font-normal leading-relaxed flex-grow"
+                >
+                  {t("projects.fitness.description")}
+                </p>
+                <div class="mt-6">
+                  <button
+                    class="w-full flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-11 px-4 bg-primary text-white text-base font-bold leading-normal tracking-[0.015em] hover:bg-primary-hover transition-colors"
+                  >
+                    <span class="truncate">{t("projects.viewProject")}</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project Card 3 -->
+            <div
+              class="flex flex-col gap-4 bg-card-light dark:bg-card-dark rounded-xl shadow-sm card-hover overflow-hidden"
+            >
+              <div
+                class="w-full bg-gray-300 dark:bg-gray-700 aspect-video flex items-center justify-center text-gray-500 dark:text-gray-400"
+              >
+                <span class="text-sm">Imagen proyecto</span>
+              </div>
+              <div class="p-6 flex flex-col flex-grow">
+                <p
+                  class="text-text-light dark:text-text-dark text-xl font-bold leading-normal mb-2"
+                >
+                  {t("projects.corporate.title")}
+                </p>
+                <p
+                  class="text-card-text-light dark:text-card-text-dark text-base font-normal leading-relaxed flex-grow"
+                >
+                  {t("projects.corporate.description")}
+                </p>
+                <div class="mt-6">
+                  <button
+                    class="w-full flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-11 px-4 bg-primary text-white text-base font-bold leading-normal tracking-[0.015em] hover:bg-primary-hover transition-colors"
+                  >
+                    <span class="truncate">{t("projects.viewProject")}</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <Footer />
+  </div>
+</Layout>
+
+<style>
+  .card-hover {
+    transition:
+      transform 0.3s ease-in-out,
+      box-shadow 0.3s ease-in-out;
+  }
+
+  .card-hover:hover {
+    transform: translateY(-5px);
+    box-shadow:
+      0 10px 15px -3px rgb(0 0 0 / 0.1),
+      0 4px 6px -4px rgb(0 0 0 / 0.1);
+  }
+
+  .dark .card-hover:hover {
+    box-shadow:
+      0 10px 15px -3px rgb(0 0 0 / 0.2),
+      0 4px 6px -4px rgb(0 0 0 / 0.2);
+  }
+</style>

@@ -1,0 +1,103 @@
+{
+  "nav": {
+    "projects": "Proyectos",
+    "skills": "Habilidades",
+    "experience": "Experiencia",
+    "about": "Sobre Mí"
+  },
+  "home": {
+    "title": "Hola, soy Luciano Gomez",
+    "subtitle": "Un desarrollador especializado en crear aplicaciones web eficientes, modernas y responsivas. +2 años de experiencia como Full Stack Web Developer. De Córdoba, Argentina 🇦🇷.",
+    "viewProjects": "Ver proyectos",
+    "contactMe": "Contactarme",
+    "projectsTitle": "Proyectos",
+    "projectOne": {
+      "title": "E-commerce",
+      "description": "Desarrollo de una tienda online de alto rendimiento utilizando React, Node.js y una arquitectura headless."
+    },
+    "projectTwo": {
+      "title": "Google Translate",
+      "description": "Aplicación web del clon de Google Translate utilizando React."
+    },
+    "projectThree": {
+      "title": "Quiz JavaScript",
+      "description": "Juego de preguntas y respuestas de JavaScript en donde se suman puntos por respuesta correcta."
+    },
+    "imagePlaceholder": "Tu foto aquí",
+    "projectImagePlaceholder": "Imagen proyecto"
+  },
+  "projects": {
+    "title": "Mis Proyectos",
+    "subtitle": "Aquí hay una selección de algunos de mis trabajos recientes. Explora cada proyecto para ver cómo convierto ideas en realidades digitales funcionales y atractivas.",
+    "viewProject": "Ver Proyecto",
+    "ecommerce": {
+      "title": "E-commerce",
+      "description": "Desarrollo de una tienda online de alto rendimiento utilizando React, Node.js y una arquitectura headless."
+    },
+    "fitness": {
+      "title": "Google Translate",
+      "description": "Aplicación web del clon de Google Translate utilizando React."
+    },
+    "corporate": {
+      "title": "Quiz JavaScript",
+      "description": "Juego de preguntas y respuestas de JavaScript en donde se suman puntos por respuesta correcta."
+    },
+    "imagePlaceholder": "Imagen proyecto"
+  },
+  "skills": {
+    "title": "Habilidades",
+    "subtitle": "Descripción de habilidades"
+  },
+  "experience": {
+    "title": "Experiencia Profesional",
+    "subtitle": "Mi trayectoria profesional, desde mis inicios hasta mi rol actual.",
+    "scrollMore": "Desliza para ver más",
+    "job1": {
+      "period": "Noviembre 2025 - Presente",
+      "title": "Full Stack Engineer",
+      "company": "Blumb AI.",
+      "description": "Formo parte del equipo de desarrollo de Blumb AI, una empresa de IA que busca mejorar la experiencia de los usuarios en sus aplicaciones web, siendo el socio estrategico que ayuda y acompaña a las empresas a migrar a IA."
+    },
+    "job2": {
+      "period": "Marzo 2024 - Noviembre 2025",
+      "title": "Full Stack Developer",
+      "company": "Goply.",
+      "description": "Contribuí al desarrollo de un sistema de carpooling robusto, el cual se iba a implementar en la provincia de Córdoba, Argentina. Disminuyendo el impacto ambiental al reducir el uso de vehículos particulares y promoviendo la movilidad sostenible."
+    },
+    "job3": {
+      "period": "Marzo 2023 - Marzo 2024",
+      "title": "Full Stack Developer Junior",
+      "company": "Checkbox Innovations.",
+      "description": "Responsable de la maquetación de sitios web responsivos, creación de activos gráficos y colaboración en un equipo ágil para entregar un mvp de una plataforma de agentes inteligentes ."
+    }
+  },
+  "about": {
+    "title": "Sobre Mí",
+    "journey": {
+      "title": "Mi Trayectoria",
+      "description": "Soy un profesional apasionado y orientado a resultados, con una habilidad especial para crear soluciones innovadoras. Mi viaje en el mundo de la tecnología comenzó a mis 15 años y ha sido impulsado por una curiosidad incesante y un deseo de generar un impacto tangible."
+    },
+    "interests": {
+      "title": "Mis Intereses",
+      "description": "Cuando no estoy inmerso en código o diseño, me puedes encontrar explorando las nuevas tecnologías, aprendiendo sobre el mundo de la inteligencia artificial y el aprendizaje automático, o simplemente disfrutando de un buen momento."
+    },
+    "philosophy": {
+      "title": "Mi Filosofía",
+      "description": "Creo en el poder de la colaboración, el aprendizaje continuo y un enfoque centrado en el ser humano en todo lo que hago. Mi filosofía es simple: mantente curioso, humilde y siempre esfuérzate por construir cosas que importen."
+    },
+    "letsTalk": "Hablemos",
+    "downloadCV": "Descargar CV",
+    "imagePlaceholder": "Tu foto aquí"
+  },
+  "footer": {
+    "copyright": "Todos los derechos reservados."
+  },
+  "meta": {
+    "title": "Portafolio de Luciano Gomez",
+    "description": "Desarrollador de software apasionado con experiencia en la creación de aplicaciones web modernas y responsivas.",
+    "projectsTitle": "Proyectos - Luciano Gomez",
+    "skillsTitle": "Habilidades - Luciano Gomez",
+    "experienceTitle": "Experiencia - Luciano Gomez",
+    "aboutTitle": "Sobre Mí - Luciano Gomez"
+  }
+}

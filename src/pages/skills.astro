@@ -1,0 +1,364 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+
+const SKILLS = [
+  {
+    title: "NodeJs",
+    image: "/skills/backend/nodeJs.png",
+    category: "backend",
+  },
+  {
+    title: "Express",
+    image: {
+      light: "/skills/backend/Express.js_light.svg",
+      dark: "/skills/backend/Express.js_dark.svg",
+    },
+    category: "backend",
+  },
+  {
+    title: "Python",
+    image: "/skills/backend/python.png",
+    category: "backend",
+  },
+  {
+    title: "Docker",
+    image: "/skills/backend/docker.png",
+    category: "backend",
+  },
+  {
+    title: "PostgreSQL",
+    image: "/skills/backend/postgresql.png",
+    category: "backend",
+  },
+  {
+    title: "MongoDB",
+    image: "/skills/backend/mongoDB.png",
+    category: "backend",
+  },
+  {
+    title: "Supabase",
+    image: "/skills/backend/supabase.svg",
+    category: "backend",
+  },
+  {
+    title: "SQL",
+    image: "/skills/backend/sql.png",
+    category: "backend",
+  },
+  {
+    title: "HTML5",
+    image: "/skills/frontend/html.png",
+    category: "frontend",
+  },
+  {
+    title: "Bootstrap",
+    image: "/skills/frontend/bootstrap.svg",
+    category: "frontend",
+  },
+  {
+    title: "Material UI",
+    image: "/skills/frontend/materialui.svg",
+    category: "frontend",
+  },
+  {
+    title: "Mantine",
+    image: "/skills/frontend/mantine.svg",
+    category: "frontend",
+  },
+  {
+    title: "CSS3",
+    image: "/skills/frontend/css.png",
+    category: "frontend",
+  },
+  {
+    title: "JavaScript",
+    image: "/skills/frontend/js.png",
+    category: "frontend",
+  },
+  {
+    title: "React",
+    image: "/skills/frontend/react.png",
+    category: "frontend",
+  },
+  {
+    title: "Tailwind CSS",
+    image: "/skills/frontend/tailwind.png",
+    category: "frontend",
+  },
+  {
+    title: "AWS",
+    image: {
+      light: "/skills/learning/Amazon Web Services_light.svg",
+      dark: "/skills/learning/Amazon Web Services_dark.svg",
+    },
+    category: "learning",
+  },
+  {
+    title: "N8N",
+    image: "/skills/learning/n8n.svg",
+    category: "learning",
+  },
+  {
+    title: "Prisma",
+    image: "/skills/learning/prisma.png",
+    category: "learning",
+  },
+  {
+    title: "Astro",
+    image: {
+      light: "/skills/learning/Astro_light.svg",
+      dark: "/skills/learning/Astro_dark.svg",
+    },
+    category: "learning",
+  },
+  {
+    title: "Figma",
+    image: "/skills/tools/figma.png",
+    category: "tools",
+  },
+  {
+    title: "GitHub",
+    image: "/skills/tools/github.png",
+    category: "tools",
+  },
+  {
+    title: "Jira",
+    image: "/skills/tools/jira.png",
+    category: "tools",
+  },
+  {
+    title: "Linux",
+    image: "/skills/tools/linux.png",
+    category: "tools",
+  },
+  {
+    title: "Postman",
+    image: "/skills/tools/postman.png",
+    category: "tools",
+  },
+  {
+    title: "Windsurf",
+    image: {
+      light: "/skills/tools/Windsurf_light.svg",
+      dark: "/skills/tools/Windsurf_dark.svg",
+    },
+    category: "tools",
+  },
+  {
+    title: "Antigravity",
+    image: "/skills/tools/antigravity.svg",
+    category: "tools",
+  },
+  {
+    title: "Linear",
+    image: "/skills/tools/linear.svg",
+    category: "tools",
+  },
+  {
+    title: "Slack",
+    image: "/skills/tools/slack.svg",
+    category: "tools",
+  },
+];
+---
+
+<Layout title="Habilidades - Luciano Gomez">
+  <div class="min-h-screen flex flex-col">
+    <Header />
+
+    <main class="flex-1">
+      <div class="px-4 md:px-20 lg:px-40 py-5">
+        <div class="max-w-[960px] mx-auto">
+          <!-- Page Title -->
+          <h2
+            class="text-text-light dark:text-white text-3xl font-bold leading-tight tracking-tighter px-4 pb-3 pt-5"
+          >
+            Mis Habilidades
+          </h2>
+
+          <!-- Filter Tabs -->
+          <div class="flex gap-3 p-3 flex-wrap pr-4">
+            <button
+              class="filter-btn active flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-lg pl-4 pr-4 cursor-pointer transition-colors"
+              data-filter="all"
+            >
+              <p class="text-sm font-medium leading-normal">Todos</p>
+            </button>
+            <button
+              class="filter-btn flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-lg border pl-4 pr-4 cursor-pointer transition-colors"
+              data-filter="frontend"
+            >
+              <p class="text-sm font-medium leading-normal">Frontend</p>
+            </button>
+            <button
+              class="filter-btn flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-lg border pl-4 pr-4 cursor-pointer transition-colors"
+              data-filter="backend"
+            >
+              <p class="text-sm font-medium leading-normal">Backend</p>
+            </button>
+            <button
+              class="filter-btn flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-lg border pl-4 pr-4 cursor-pointer transition-colors"
+              data-filter="learning"
+            >
+              <p class="text-sm font-medium leading-normal">Aprendiendo</p>
+            </button>
+            <button
+              class="filter-btn flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-lg border pl-4 pr-4 cursor-pointer transition-colors"
+              data-filter="tools"
+            >
+              <p class="text-sm font-medium leading-normal">Herramientas</p>
+            </button>
+          </div>
+
+          <!-- Skills Grid -->
+          <div
+            class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-4 p-4"
+          >
+            <!-- Design Skills -->
+            <div
+              class="skill-card flex flex-1 flex-col gap-3 rounded-xl border bg-card-light dark:bg-background-dark p-4 items-center justify-center text-center transform transition-all duration-300 hover:scale-105 hover:shadow-lg hover:border-primary"
+              data-category="frontend"
+            >
+              <span class="material-symbols-outlined text-primary text-4xl"
+                >design_services</span
+              >
+              <h2
+                class="text-text-light dark:text-white text-base font-bold leading-tight"
+              >
+                Diseño UX/UI
+              </h2>
+            </div>
+
+            <!--  Frontend Skills -->
+            {
+              SKILLS.map(({ title, image, category }) => (
+                <div
+                  class="skill-card flex flex-1 flex-col gap-3 rounded-xl border bg-card-light dark:bg-background-dark p-4 items-center justify-center text-center transform transition-all duration-300 hover:scale-105 hover:shadow-lg hover:border-primary"
+                  data-category={category}
+                >
+                  <div class="flex flex-col items-center text-center">
+                    {typeof image === "string" ? (
+                      <img
+                        src={image}
+                        alt={title}
+                        class="w-10 h-10 sm:w-12 sm:h-12 mb-1 sm:mb-2"
+                      />
+                    ) : (
+                      <>
+                        <img
+                          src={image.light}
+                          alt={title}
+                          class="w-10 h-10 sm:w-12 sm:h-12 mb-1 sm:mb-2 block dark:hidden"
+                        />
+                        <img
+                          src={image.dark}
+                          alt={title}
+                          class="w-10 h-10 sm:w-12 sm:h-12 mb-1 sm:mb-2 hidden dark:block"
+                        />
+                      </>
+                    )}
+                    <h2 class="text-text-light dark:text-white text-base font-bold leading-tight">
+                      {title}
+                    </h2>
+                  </div>
+                </div>
+              ))
+            }
+
+            <div
+              class="skill-card flex flex-1 flex-col gap-3 rounded-xl border bg-card-light dark:bg-background-dark p-4 items-center justify-center text-center transform transition-all duration-300 hover:scale-105 hover:shadow-lg hover:border-primary"
+              data-category="frontend"
+            >
+              <span class="material-symbols-outlined text-primary text-4xl"
+                >person_search</span
+              >
+              <h2
+                class="text-text-light dark:text-white text-base font-bold leading-tight"
+              >
+                Investigación de Usuario
+              </h2>
+            </div>
+
+            <div
+              class="skill-card flex flex-1 flex-col gap-3 rounded-xl border bg-card-light dark:bg-background-dark p-4 items-center justify-center text-center transform transition-all duration-300 hover:scale-105 hover:shadow-lg hover:border-primary"
+              data-category="frontend"
+            >
+              <span class="material-symbols-outlined text-primary text-4xl"
+                >widgets</span
+              >
+              <h2
+                class="text-text-light dark:text-white text-base font-bold leading-tight"
+              >
+                Prototipado
+              </h2>
+            </div>
+
+            <div
+              class="skill-card flex flex-1 flex-col gap-3 rounded-xl border bg-card-light dark:bg-background-dark p-4 items-center justify-center text-center transform transition-all duration-300 hover:scale-105 hover:shadow-lg hover:border-primary"
+              data-category="frontend"
+            >
+              <span class="material-symbols-outlined text-primary text-4xl"
+                >touch_app</span
+              >
+              <h2
+                class="text-text-light dark:text-white text-base font-bold leading-tight"
+              >
+                Diseño de Interacción
+              </h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <Footer />
+  </div>
+</Layout>
+
+<style>
+  .filter-btn {
+    @apply bg-background-light dark:bg-background-dark border-gray-200 dark:border-gray-700 text-text-light dark:text-white;
+  }
+
+  .filter-btn:hover {
+    @apply bg-primary/20 border-primary/20;
+  }
+
+  .filter-btn.active {
+    @apply bg-primary/20 border-primary/20 text-primary border-transparent;
+  }
+
+  .skill-card {
+    @apply border-gray-200 dark:border-gray-700;
+  }
+</style>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const filterButtons = document.querySelectorAll(".filter-btn");
+    const skillCards = document.querySelectorAll(".skill-card");
+
+    filterButtons.forEach((button) => {
+      button.addEventListener("click", () => {
+        const filter = button.getAttribute("data-filter");
+
+        // Update active button
+        filterButtons.forEach((btn) => btn.classList.remove("active"));
+        button.classList.add("active");
+
+        // Filter cards
+        skillCards.forEach((card) => {
+          const category = card.getAttribute("data-category");
+
+          if (filter === "all" || category === filter) {
+            card.style.display = "flex";
+          } else {
+            card.style.display = "none";
+          }
+        });
+      });
+    });
+  });
+</script>
