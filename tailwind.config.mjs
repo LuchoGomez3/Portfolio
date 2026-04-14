@@ -5,12 +5,12 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: "#13a4ec",
-        "primary-hover": "#0a8fd1",
+        primary: "#0f7b6c",
+        "primary-hover": "#0b655a",
         "background-light": "#f6f7f8",
         "background-dark": "#101c22",
         accent: "#FF6F61",
-        "primary-dark": "#0A2463",
+        "primary-dark": "#064039",
         "timeline-line": "#CED4DA",
         "text-light": "#212529",
         "text-dark": "#f8f9fa",
