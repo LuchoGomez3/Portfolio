@@ -53,22 +53,22 @@
     "subtitle": "My professional journey, from my beginnings to my current role.",
     "scrollMore": "Scroll to see more",
     "job1": {
-      "period": "January 2021 - Present",
-      "title": "Senior UX/UI Designer",
-      "company": "Tech Solutions Inc.",
-      "description": "Leading key design projects, improving usability metrics by 25%. Close collaboration with development teams to implement scalable design systems."
+      "period": "November 2025 - Present",
+      "title": "Full Stack Engineer",
+      "company": "Blumb AI.",
+      "description": "Part of the development team at Blumb AI, an AI company focused on improving user experience in web applications, serving as a strategic partner that helps and supports businesses in their migration to AI."
     },
     "job2": {
-      "period": "June 2018 - December 2020",
-      "title": "Product Designer",
-      "company": "Creative Agency Co.",
-      "description": "Designing interfaces for native mobile applications, conducting user research and creating interactive prototypes. Contributed to the development of a robust design system."
+      "period": "March 2024 - November 2025",
+      "title": "Full Stack Developer",
+      "company": "Goply.",
+      "description": "Contributed to the development of a robust carpooling system, which was to be implemented in the province of Córdoba, Argentina. Reducing environmental impact by decreasing the use of private vehicles and promoting sustainable mobility."
     },
     "job3": {
-      "period": "May 2016 - June 2018",
-      "title": "Junior Web Designer",
-      "company": "Web Startups LLC",
-      "description": "Responsible for responsive website layout, creating graphic assets and collaborating in an agile team to deliver projects to clients on tight deadlines."
+      "period": "March 2023 - March 2024",
+      "title": "Full Stack Developer Junior",
+      "company": "Checkbox Innovations.",
+      "description": "Responsible for responsive website layout, creating graphic assets and collaborating in an agile team to deliver an MVP of an intelligent agents platform."
     }
   },
   "about": {
